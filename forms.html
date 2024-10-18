@@ -1,13 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="Assets/css/login.css">
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
 </head>
-<body>
 
+
+<body>
+    <div class="login-container">
+        <h2>Login Form</h2>
+        <form action="#" method="post">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="courses">Select Course:</label><br>
+            <select id="courses" name="courses">
+                <option value="java">Java Programming</option>
+                <option value="python">Python Programming</option>
+                <option value="webdev">Web Development</option>
+            </select><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="Assets/jss/script.js"></script>
 </body>
 </html>
+
